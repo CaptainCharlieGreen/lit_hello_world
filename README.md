@@ -1,18 +1,18 @@
 # To Run
 
-1) Install lit (TODO: link to full docs)
+1) Install [litc](https://github.com/CaptainCharlieGreen/LitSystemLanguage#hello-world--quick-start)
 
 2) Clone this repository
 ```bash
   $ git clone git@github.com:CaptainCharlieGreen/lit_hello_world.git
 ```
-2) Run lit build in the cloned directory:
+2) Run litc build in the cloned directory:
 ```bash
-  $ lit build ./HelloWorld.lit
+  $ litc build ./HelloWorld.lit
 ```
-4) Run lit deploy on the built .sys file:
+4) Run litc deploy on the built .sys file:
 ```bash
-  $ lit deploy ./HelloWorld.sys
+  $ litc deploy ./HelloWorld.sys
 ```
 5) Navigate to localhost:3000 in your browser, or use curl:
 ```bash
@@ -141,10 +141,10 @@ Now, add this role's arn to litconfig.json at the path aws/preCreatedRole.  Your
 }
 ```
 
-5) Run lit deploy
+5) Run lit deploy (we don't need to build again--we can use the same .sys file!)
 
 ```bash
-  $ lit deploy ./HelloWorld.sys
+  $ litc deploy ./HelloWorld.sys
 ```
 
 ## Check it out

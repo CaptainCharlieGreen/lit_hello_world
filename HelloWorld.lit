@@ -1,8 +1,7 @@
 service HelloWorld {
   include "Http"
 
-  Http { method: "get", path: "/" } ->
-  any helloWorld (void) {
-    artifact: "helloWorld.js"
-  }
+  Http { method: "get", path: "*" } ->
+    helloWorld ():any ->
+      "./helloWorld.js"
 }
